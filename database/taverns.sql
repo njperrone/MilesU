@@ -122,80 +122,91 @@ CREATE TABLE [Rats] (
 --'Insert data into tables'
 
 INSERT INTO [Taverns] (TavernName, TavernDescription, TavernLocation, TavernOwner, TavernRoles, TavernServices)
-VALUES ("Null Tavern", "A wonderful tavern where NULL is the experience", 3, 1, 3, 1); --'ID 1'
-VALUES("CLASSIFIED", "CLASSIFIED REDACTED", 7, 5, 4, 2); --'ID 2'
-VALUES("Club Dada", "A hobby-hosre's dream", 6, 4, 5, 4); --'ID 3'
-VALUES("Championships Sportsbar and Grill", "Come for the punks, but sorry there's no food", 1, 6, 2, 3); --'ID 4'
-VALUES("Scary Spooky Skelletons", "Self explanatory what goes on in this tavern", 5, 3, 2, 5); --'ID 5'
+VALUES 
+	("Null Tavern", "A wonderful tavern where NULL is the experience", 3, 1, 3, 1), --'ID 1'
+	("CLASSIFIED", "CLASSIFIED REDACTED", 7, 5, 4, 2), --'ID 2'
+	("Club Dada", "A hobby-hosre's dream", 6, 4, 5, 4), --'ID 3'
+	("Championships Sportsbar and Grill", "Come for the punks, but sorry there's no food", 1, 6, 2, 3), --'ID 4'
+	("Scary Spooky Skelletons", "Self explanatory what goes on in this tavern", 5, 3, 2, 5); --'ID 5'
 
 INSERT INTO [Location] (City, States)
-VALUES ("Trenton", "New Jersey"); --'ID 1'
-VALUES ("Morrisville", "Pennsylvania"); --'ID 2'
-VALUES ("Nowhere", "Quit Asking"); --'ID 3'
-VALUES ("Princeton", "New Jersey"); --'ID 4'
-VALUES ("Phialdelphia", "Pennsylvania"); --'ID 5'
-VALUES ("Denver", "Colorado"); --'ID 6'
-VALUES ("CLASSIFIED", "CLASSIFIED"); --'ID 7'
+VALUES 
+	("Trenton", "New Jersey"), --'ID 1'
+	("Morrisville", "Pennsylvania"), --'ID 2'
+	("Nowhere", "Quit Asking"), --'ID 3'
+	("Princeton", "New Jersey"), --'ID 4'
+	("Phialdelphia", "Pennsylvania"), --'ID 5'
+	("Denver", "Colorado"), --'ID 6'
+	("CLASSIFIED", "CLASSIFIED"); --'ID 7'
 
 
 INSERT INTO [Owners] (OwnerName, TavernsOwned, UserRoles)
-VALUES ("Mr. Nobody", 1, 1); --'ID 1'
-VALUES("Bob the Builder", NULL, 1); --'ID 2'
-VALUES("Mrs. Nesbit", 5, 1); --'ID 3'
-VALUES("Angelica Pickles", 3, 1); --'ID 4'
-VALUES("CLASSIFIED", 2, 1); --'ID 5'
-VALUES("Nikky Nailbomb", 4, 1); --'ID 6'
+VALUES 
+	("Mr. Nobody", 1, 1), --'ID 1'
+	("Bob the Builder", NULL, 1), --'ID 2'
+	("Mrs. Nesbit", 5, 1), --'ID 3'
+	("Angelica Pickles", 3, 1), --'ID 4'
+	("CLASSIFIED", 2, 1), --'ID 5'
+	("Nikky Nailbomb", 4, 1); --'ID 6'
 
 INSERT INTO [Roles] (TavernRole, RoleDescription)
-VALUES ("Owner", "Pretty straight forward. Owns a tavern. Does owner things."); --'ID 1'
-VALUES ("Quiet Drinker", "A person who likes a drink or two or several. Generally quiet."); --'ID 2'
-VALUES ("Dada", "Dada comes from the dictionary. It is terribly simple. In French it means hobby horse. In German it means good-bye, Get off my back, Be seeing you sometime. In Romanian: Yes, indeed, you are right, that's it. But of course, yes, definitely, right. And so forth."); --'ID 3'
-VALUES("CLASSIFIED", "CLASSIFIED"); --'ID 4'
-VALUES("The Talker", "They just wont be quiet no matter how much you ask"); --'ID 5'
+VALUES
+	("Owner", "Pretty straight forward. Owns a tavern. Does owner things."), --'ID 1'
+	("Quiet Drinker", "A person who likes a drink or two or several. Generally quiet."), --'ID 2'
+	("Dada", "Dada comes from the dictionary. It is terribly simple. In French it means hobby horse. In German it means good-bye, Get off my back, Be seeing you sometime. In Romanian: Yes, indeed, you are right, that's it. But of course, yes, definitely, right. And so forth."), --'ID 3'
+	("CLASSIFIED", "CLASSIFIED"), --'ID 4'
+	("The Talker", "They just wont be quiet no matter how much you ask"); --'ID 5'
 
 INSERT INTO [Users] (UserName, TavernAt, UserRole)
-VALUES ("The Quiz", 1); --'ID 1'
-VALUES("Artie", 4, 5); --'ID 2'
-VALUES("Mike", 5, 2); --'ID 3'
-VALUES("Queen Meave", 1, 5); --'ID 4'
-VALUES("Annette", 4, 5); --'ID 5'
+VALUES
+	("The Quiz", 1), --'ID 1'
+	("Artie", 4, 5), --'ID 2'
+	("Mike", 5, 2), --'ID 3'
+	("Queen Meave", 1, 5), --'ID 4'
+	("Annette", 4, 5); --'ID 5'
 
 INSERT INTO [Supplies] (SupplyName, SupplyDescription, SupplyUnit, SupplyCount, DateUpdated, UnitCost)
-VALUES ("Strong Ale", "It's an ale, it's strong, it's drinkable", "pint", 1000, 2020-02-03, 7); --'ID 1'
-VALUES("Weak Ale", "Not as strong as the Strong Ale", "pint", 942, 2018-02-03, 5); --'ID 2'
-VALUES("Ale", "Not strong, not weak, just ale", 500, 2020-09-22, 6); --'ID 3'
-VALUES("The Void", "Self explanatory, yet it's bounded and compact", "Nietzsche", 10000000, 2000-01-01, 35); --'ID 4'
-VALUES("A can of oxygen", "You use it to breathe in smoke filled rooms", "can", 300, 2020-07-04, 300); --'ID 5'
+VALUES
+	("Strong Ale", "It's an ale, it's strong, it's drinkable", "pint", 1000, 2020-02-03, 7), --'ID 1'
+	("Weak Ale", "Not as strong as the Strong Ale", "pint", 942, 2018-02-03, 5), --'ID 2'
+	("Ale", "Not strong, not weak, just ale", 500, 2020-09-22, 6), --'ID 3'
+	("The Void", "Self explanatory, yet it's bounded and compact", "Nietzsche", 10000000, 2000-01-01, 35), --'ID 4'
+	("A can of oxygen", "You use it to breathe in smoke filled rooms", "can", 300, 2020-07-04, 300); --'ID 5'
 
 INSERT INTO [Inventory] (SupplyID, TavernID, Cost, SupplyCount, DateRecieved)
-VALUES (5, 2, 3000, 10, 2020-08-13); --'ID 1'
-VALUES(5, 4, 30000, 100, 2019-03-11); --'ID 2'
-VALUES(1, 3, 7000, 1000, 2018-05-04); --'ID 3'
-VALUES(3, 1, 6000, 1000, 2020-09-21); --'ID 4'
-VALUES(4, 5, 35, 1, 2020-07-04); --'ID 5'
+VALUES
+	(5, 2, 3000, 10, 2020-08-13), --'ID 1'
+	(5, 4, 30000, 100, 2019-03-11), --'ID 2'
+	(1, 3, 7000, 1000, 2018-05-04), --'ID 3'
+	(3, 1, 6000, 1000, 2020-09-21), --'ID 4'
+	(4, 5, 35, 1, 2020-07-04); --'ID 5'
 
 INSERT INTO [Services] (ServicesName, ServicesStatus)
-VALUES ("Mad mad mad singing", 1); --'ID 1'
-VALUES("CLASSIFIED", 3); --'ID 2'
-VALUES("Smoking", 2); --'ID 3'
-VALUES("A Game of Marco Polo", 1); --'ID 4'
-VALUES("Being Politely Asked To Leave", 1); --'ID 5'
+VALUES
+	("Mad mad mad singing", 1), --'ID 1'
+	("CLASSIFIED", 3), --'ID 2'
+	("Smoking", 2), --'ID 3'
+	("A Game of Marco Polo", 1), --'ID 4'
+	("Being Politely Asked To Leave", 1); --'ID 5'
 
 INSERT INTO [ServicesStatus] (StatusName, StatusDescription)
-VALUES ("Active", "This service is currently available"); --'ID 1'
-VALUES("Inactive", "This service is currently not available"); --'ID 2'
-VALUES("CLASSIFIED", "WOULDNT YOU LIKE TO KNOW"); --'ID 3'
+VALUES 
+	("Active", "This service is currently available"), --'ID 1'
+	("Inactive", "This service is currently not available"), --'ID 2'
+	("CLASSIFIED", "WOULDNT YOU LIKE TO KNOW"); --'ID 3'
 
 INSERT INTO [ServicesSold] (ServiceID, TavernID, UserSoldTo, ServicePrice, DateSold, AmountSold)
-VALUES (2, 2, 3, 350, 2020-07-04, 1); --'ID 1'
-VALUES(1, 5, 4, 0, 2020-03-16, 1); --'ID 2'
-VALUES(1, 4, 5, 20, 2020-05-25, 75); --'ID 3'
-VALUES(4, 1, 1, 45, 2019-10-31, 3000); --'ID 4'
-VALUES(5, 2, 3, 0, 2018-07-07, 420); --'ID 5'
+VALUES 
+	(2, 2, 3, 350, 2020-07-04, 1), --'ID 1'
+	(1, 5, 4, 0, 2020-03-16, 1), --'ID 2'
+	(1, 4, 5, 20, 2020-05-25, 75), --'ID 3'
+	(4, 1, 1, 45, 2019-10-31, 3000), --'ID 4'
+	(5, 2, 3, 0, 2018-07-07, 420); --'ID 5'
 
 INSERT INTO [Rats] (RatName, RatDescription, FavoratHobby, TavernID)
-VALUES ("Rizzo", "A rat who loves to eat and play tricks on others. He speaks with a Brooklyn accent and is often paired with Gonzo and the two have been best friends ever since.", "Eating", 2); --'ID 1'
-VALUES("Hank", "Just your plane brown rat", "Long walks", 3); --'ID 2'
-VALUES("Gonzo", "Big blue nose", "Buggin Rizzo", 5); --'ID 3'
-VALUES("Scabby", "A lot of rats don't like Scabby", "Pickin scabs", 5); --'ID 4'
-VALUES("Stix", "Not a lot is known about this cool cat", "Air guitar", 4); --'ID 5'
+VALUES 
+	("Rizzo", "A rat who loves to eat and play tricks on others. He speaks with a Brooklyn accent and is often paired with Gonzo and the two have been best friends ever since.", "Eating", 2), --'ID 1'
+	("Hank", "Just your plane brown rat", "Long walks", 3), --'ID 2'
+	("Gonzo", "Big blue nose", "Buggin Rizzo", 5), --'ID 3'
+	("Scabby", "A lot of rats don't like Scabby", "Pickin scabs", 5), --'ID 4'
+	("Stix", "Not a lot is known about this cool cat", "Air guitar", 4), --'ID 5'
