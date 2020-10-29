@@ -10,7 +10,3 @@ function wow(var1) {
         return var1;
     }
 }
-
-
-// follow on twitter:
-// John Graham Dev
