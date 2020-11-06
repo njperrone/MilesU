@@ -1,0 +1,32 @@
+.container{
+    width: 800px;
+    border-radius: 10px;
+    background-color: #bbbbbb;
+    margin: 0 auto;
+}
+
+.number-row{
+    margin: 0 auto;
+}
+
+#number-1{}
+
+#number-2{}
+
+.operation-row{}
+
+#add{}
+
+#subtract{}
+
+#multiply{}
+
+#divide{}
+
+.button-row{}
+
+#equals{}
+
+#clear{}
+
+.results
