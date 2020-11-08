@@ -6,23 +6,36 @@
     </head>
     <body>
         <div class="container">
-            <div class="number-row">
-                <input type="number" name="" id="number-1">
-                <input type="number" name="" id="number-2">
-            </div>
-            <div class="operation-row">
-                <input type="radio" name="" id="add">
-                <input type="radio" name="" id="subtract">
-                <input type="radio" name="" id="multiply">
-                <input type="radio" name="" id="divide">
-            </div>
-            <div class="button-row">
-                <input type="button" value="" id="equals">
-                <input type="button" value="" id="clear">
-            </div>
-            <div class="results">
-                <h1>Results go here.</h1>
-            </div>
+            
+
+            <form id="calculator" action="">
+                
+                <div class="number-row">
+                    <label for="calculator">First Number</label>
+                    <input type="number" name="number" id="number-1" value="value" autofocus="on">
+                    <label for="calculator">First Number</label>
+                    <input type="number" name="number" id="number-2" value="value" >
+                </div>
+
+                <div class="operation-row">
+                    <input type="radio" name="operation" id="add" value="add" checked="">
+                    <label for="add">Add</label>
+                    <input type="radio" name="operation" id="subtract" value="subtract" checked="">
+                    <label for="subtract">Subtract</label>
+                    <input type="radio" name="operation" id="multiply" value="multiply" checked="">
+                    <label for="multiply">Multiply</label>
+                    <input type="radio" name="operation" id="divide" value="divide" checked="">
+                    <label for="divide">Divide</label>
+                </div>
+
+                <div class="button-row">
+                    <input type="button" value="=" id="equals" onclick="main()">
+                    <input type="button" value="Clear" id="clear" onclick="clearForm()">
+                </div>
+            </form>
+            
+            <h2 id="results">Please input 2 numbers and select an operation.</h2>
+
         </div>
     </body>
     <script src="scripts.js"></script>
