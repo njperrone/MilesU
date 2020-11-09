@@ -11,30 +11,46 @@
             <form id="calculator" action="">
                 
                 <div class="number-row">
-                    <label for="calculator">First Number</label>
-                    <input type="number" name="number" id="number-1" value="value" autofocus="on">
-                    <label for="calculator">First Number</label>
-                    <input type="number" name="number" id="number-2" value="value" >
+                    <div class="number-input" id="first-num">
+                        <label for="calculator">First Number</label>
+                        <input type="number" name="number" value="value" autofocus="on" id="number-1">
+                    </div>
+                    <div class="number-input" id="second-num">
+                        <label for="calculator">Second Number</label>
+                        <input type="number" name="number" value="value" id="number-2">
+                    </div>
                 </div>
 
                 <div class="operation-row">
-                    <input type="radio" name="operation" id="add" value="add" checked="">
-                    <label for="add">Add</label>
-                    <input type="radio" name="operation" id="subtract" value="subtract" checked="">
-                    <label for="subtract">Subtract</label>
-                    <input type="radio" name="operation" id="multiply" value="multiply" checked="">
-                    <label for="multiply">Multiply</label>
-                    <input type="radio" name="operation" id="divide" value="divide" checked="">
-                    <label for="divide">Divide</label>
+                    <div class="radio">
+
+                        <input type="radio" name="operation" id="add" value="add" checked="">
+                        <label for="add">Add</label>
+                    </div>
+                    <div class="radio">
+
+                        <input type="radio" name="operation" id="subtract" value="subtract" checked="">
+                        <label for="subtract">Subtract</label>
+                    </div>
+                    <div class="radio">
+
+                        <input type="radio" name="operation" id="multiply" value="multiply" checked="">
+                        <label for="multiply">Multiply</label>
+                    </div>
+                    <div class="radio">
+
+                        <input type="radio" name="operation" id="divide" value="divide" checked="">
+                        <label for="divide">Divide</label>
+                    </div>
                 </div>
 
                 <div class="button-row">
                     <input type="button" value="=" id="equals" onclick="main()">
                     <input type="button" value="Clear" id="clear" onclick="clearForm()">
                 </div>
+                <p id="results">Please input 2 numbers and select an operation.</p>
             </form>
             
-            <h2 id="results">Please input 2 numbers and select an operation.</h2>
 
         </div>
     </body>
